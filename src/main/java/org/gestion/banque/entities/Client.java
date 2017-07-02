@@ -57,7 +57,6 @@ public class Client implements Serializable{
 
 	public Client() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Client(String nomClient, String adresseClient) {
@@ -66,7 +65,7 @@ public class Client implements Serializable{
 		this.adresseClient = adresseClient;
 	}
 	
-	
+	//test staging area 
 	
 
 }
