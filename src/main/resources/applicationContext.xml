@@ -19,7 +19,12 @@
 				<value>classpath*:META-INF/persistence.xml</value>
 			</list>
 		</property>
+		<property name="defaultDataSource" ref="dataSource"></property>
 		
+	</bean>
+	<bean id="entityManagerfactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitManager" ref="persistenceUnitManager"></property>
+		<property name="persistenceUnitName" value="MY_P_U"></property>
 	</bean>
 			
 </beans>
