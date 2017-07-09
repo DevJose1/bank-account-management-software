@@ -26,5 +26,8 @@
 		<property name="persistenceUnitManager" ref="persistenceUnitManager"></property>
 		<property name="persistenceUnitName" value="MY_P_U"></property>
 	</bean>
+	<bean id ="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerfactory"></property>
+	</bean>
 			
 </beans>
