@@ -8,7 +8,7 @@ import org.gestion.banque.entities.Employe;
 import org.gestion.banque.entities.Groupe;
 import org.gestion.banque.entities.Operation;
 
-interface IBanqueMetier {
+public interface IBanqueMetier {
 	public Client addClient(Client c);
 	public Employe addEmploye(Employe e, Long codeSup );
 	public Groupe addGroupe(Groupe g);
